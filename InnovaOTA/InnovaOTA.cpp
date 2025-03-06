@@ -108,7 +108,7 @@ int firmwareVersionCheck() {
 bool firmwareUpdate()
 {
     WiFiClientSecure wificlient;
-    wificlient.setInsecure();
+    wificlient.setCACert(rootCACertificate);
     
     t_httpUpdate_return ret = httpUpdate.update(wificlient, URL_FW_BIN);
 
