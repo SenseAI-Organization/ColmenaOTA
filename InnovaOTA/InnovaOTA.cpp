@@ -75,7 +75,7 @@ int firmwareVersionCheck() {
     if (WiFi.status() != WL_CONNECTED) return -1;
     
     HTTPClient http;
-    http.begin("https://raw.githubusercontent.com/SenseAI-Organization/FrisbyOTA/main/bin_version.txt");
+    http.begin("https://raw.githubusercontent.com/SenseAI-Organization/ColmenaOTA/main/bin_version.txt");
     
     int httpCode = http.GET();
     if(httpCode != HTTP_CODE_OK) {
