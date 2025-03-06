@@ -17,8 +17,7 @@ extern const char *Version_firmware;
 /** ****************************************************************************
  ** ************ VARIABLES *****************************************************
  ** ****************************************************************************/
-const char *rootCACertificate = 
-"-----BEGIN CERTIFICATE-----\n"
+const char *rootCACertificate = "-----BEGIN CERTIFICATE-----\n"
 "MIIEoTCCBEigAwIBAgIRAKtmhrVie+gFloITMBKGSfUwCgYIKoZIzj0EAwIwgY8x\n"
 "CzAJBgNVBAYTAkdCMRswGQYDVQQIExJHcmVhdGVyIE1hbmNoZXN0ZXIxEDAOBgNV\n"
 "BAcTB1NhbGZvcmQxGDAWBgNVBAoTD1NlY3RpZ28gTGltaXRlZDE3MDUGA1UEAxMu\n"
