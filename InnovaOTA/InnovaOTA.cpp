@@ -4,7 +4,7 @@
  ** ****************************************************************************/
 #include "InnovaOTA.h"
 
-extern const char *Version_firmware;
+extern const char *firmwareVer;
 
 /** ****************************************************************************
  ** ************ DEFINES *******************************************************
@@ -92,10 +92,10 @@ int firmwareVersionCheck() {
     Serial.print("Server version: ");
     Serial.println(newFWVersion);
     Serial.print("Device version: ");
-    Serial.println(Version_firmware);
+    Serial.println(firmwareVer);
     
     // Usar la nueva función de comparación
-    if(isNewerVersion(newFWVersion.c_str(), Version_firmware)) {
+    if(isNewerVersion(newFWVersion.c_str(), firmwareVer)) {
         return 1;
     }
     
